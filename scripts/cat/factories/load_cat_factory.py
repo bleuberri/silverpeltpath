@@ -241,6 +241,9 @@ class LoadCatFactory(BaseCatFactory):
             **{
                 "name": kwargs["pelt_name"],
                 "length": kwargs["pelt_length"],
+                "texture": kwargs["pelt_texture"],
+                "size": kwargs["pelt_size"],
+                "build": kwargs["pelt_build"],
                 "colour": kwargs.get("pelt_color"),
                 "eye_color": eye_colour,
                 "eye_colour2": eye_colour2,

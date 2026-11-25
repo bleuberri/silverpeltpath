@@ -789,8 +789,17 @@ class ProfileScreen(Screens):
         output += i18n.t(
             "screens.profile.fur_label",
             length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
+            texture=i18n.t(f"cat.pelts.texture_{the_cat.pelt.texture}"),
         )
         # NEWLINE ----------
+        output += "\n"
+
+        # BUILD
+        output += i18n.t(
+            "screens.profile.build_label",
+            size=i18n.t(f"cat.pelts.size_{the_cat.pelt.size}"),
+            build=i18n.t(f"cat.pelts.build_{the_cat.pelt.build}"),
+        )
 
         # ACCESSORY
         if the_cat.pelt.accessory:
