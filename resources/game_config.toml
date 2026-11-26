@@ -458,6 +458,10 @@ dev_tools = false
   # 1/2^(chance) that a cat will have colourpoint
   random_point_chance = 5
 
+  # double patches
+  base_extra_white = 5
+  max_white_amount = 3
+
   # physical traits mod config
   physical_trait_chance = 20
   physical_trait_inherit_chance = 50

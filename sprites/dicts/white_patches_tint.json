@@ -40,7 +40,8 @@
     "olive", "murky", "hazeltwo", "taupe", "umber", "sienna", "ochre", "bronzetwo", "moonlight", "sunlight", "flush", "scarlet", 
     "starlight", "copper", "apricot", "lightgoldtwo", "dew", "ashen", "silver", "sky", "violettwo", "plum", "orange", "ashgray",
     "violet", "powdertwo", "blue", "obsidian", "black", "mocha", "honeydew", "ashgray", "violettwo", "powder", "vanilla", "coffee",
-    "malted", "dawn", "peach", "cherry", "golden", "ebb", "almondtwo", "vanillatwo", "coffee", "malted", "dawn", "peach", "coyote", "caramel"],
+    "malted", "dawn", "peach", "cherry", "golden", "ebb", "almondtwo", "vanillatwo", "coffee", "malted", "dawn", "peach", "coyote", "caramel",
+    "dark", "grayorange", "graybrown", "dullgolden", "darkgolden", "darkstorm", "palestorm", "darkviolet", "darkpurple", "dullred", "darkred"],
     "black": ["gray", "darkcream", "cream", "inky", "cloudy", "moss", "mold", "stone", "gold", "dirt", "darkbrown", "crimson"],
     "gray": ["gray", "powder", "cloud", "smoke", "darkgray", "inky", "cloudy", "moss", "mold", "stone", "gold", "dirt", "darkbrown", "crimson"],
     "ginger": ["darkcream", "cream", "pink", "ochre", "inky", "cloudy", "moss", "mold", "stone", "gold", "dirt", "darkbrown", "crimson"],
@@ -144,6 +145,18 @@
     "caramel": [231, 210, 191],
     "golden": [250, 233, 196],
     "black": [37, 37, 41],
+
+    "dark": [38, 38, 38],
+    "grayorange": [166, 145, 125],
+    "graybrown": [159, 138, 125],
+    "dullgolden": [169, 152, 124],
+    "darkgolden": [120, 102, 73],
+    "darkstorm": [104, 115, 120],
+    "palestorm": [135, 142, 141],
+    "darkviolet": [131, 124, 135],
+    "darkpurple": [99, 94, 109],
+    "dullred": [150, 140, 145],
+    "darkred": [115, 101, 106],
 
     "none": null
   }

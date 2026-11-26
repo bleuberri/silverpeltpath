@@ -58,7 +58,7 @@ def create_option_preview_cat(scar: str = None, acc: str = None):
             physical_trait_hidden_4=cat["physical_trait_hidden_4"] if "physical_trait_hidden_4" in cat else None,
             eye_color="SAGE",
             reverse=False,
-            white_patches=None,
+            white_patches=[white_patches] if white_patches else [],
             vitiligo=None,
             points=None,
             tortie_marking=None,
