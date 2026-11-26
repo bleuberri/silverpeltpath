@@ -37,6 +37,7 @@
         "pelt_label": "pelt: %{pelt}",
         "fur_label": "fur: %{length} %{texture}",
         "build_label": "build: %{size} %{build}",
+        "traits_label": "traits: %{trait}",
         "accessory_label": "accessory: %{accessory}",
         "parent_label": {
             "one": "parent: %{parents}",

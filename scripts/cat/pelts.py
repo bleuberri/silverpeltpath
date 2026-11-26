@@ -247,6 +247,45 @@ class Pelt:
         "COLLAR": collar_accessories,
     }
 
+    # Characteristics
+    physical_trait_head_shape = ['CIRCLEHEAD', 'OVAHEAD', 'SQUAREHEAD', 'TRIANGLEHEAD', 'RECTANGLEHEAD', 'HEARTHEAD', 'DIAMONDHEAD', 'ROUNDEDWEDGEHEAD', 'WEDGEHEAD']
+    physical_trait_forelock_shape = ['COWLICKFORELOCK', 'JAGGEDFORELOCK', 'TUFTEDFORELOCK', 'CURLEDFORELOCK', 'SPIKYFORELOCK', 'FLUFFYFORELOCK', 'EMOFORELOCK', 'COVERFORELOCK', 'HALFCOVERFORELOCK']
+    physical_trait_eye_shape = ['ROUNDEYES', 'OVALEYES', 'ALMONDEYES', 'LEMONEYES', 'WALNUTEYES', 'ROUNDALOMONDEYES', 'TEAREYES', 'HOODEDEYES', 'SNAKEEYES']
+    physical_trait_eye_size = ['SMALLEYES', 'BIGEYES', 'LARGEEYES']
+    physical_trait_pupil_shape = ['ROUNDPUPILS', 'LARGEPUPILS', 'NARROWPUPILS', 'SLITTEDPUPILS']
+    physical_trait_ear_size = ['TINYEARS', 'VERYSMALLEARS', 'SMALLEARS', 'BIGEARS', 'LARGEEARS', 'VERYLARGEEARS']
+    physical_trait_ear_shape = ['SPLITEARS', 'NARROWEARS', 'POINTEDEARS', 'ROUNDEDEARS', 'SQUAREDEARS', 'CURLEDEARS', 'ONEFOLDEAR', 'FOLDEDEARS', 'HEARTEARS', 'WIDEEARS', 'DROOPEDEARS', 'BATEARS', 'FINEARS']
+    physical_trait_ear_length = ['USHORTEARS', 'SSHORTEARS', 'STALLEARS', 'UTALLEARS']
+    physical_trait_ear_tufts = ['SMALLEARTUFTS', 'CURLEDEARTUFTS', 'FLUFFYEARTUFTS', 'LONGEARTUFTS', 'JAGGEDEARTUFTS', 'POINTEDEARTUFTS']
+    physical_trait_ear_furnishings = ['SMALLEARFURN', 'SPIKYEARFURN', 'CURLEDEARFURN', 'LONGEARFURN']
+    physical_trait_muzzle_length = ['FLATMUZZLE', 'VSHORTMUZZLE', 'SHORTMUZZLE', 'LONGMUZZLE', 'VLONGMUZZLE']
+    physical_trait_muzzle_shape = ['NARROWMUZZLE', 'ROUNDEDMUZZLE', 'BROADMUZZLE', 'POINTEDMUZZLE']
+    physical_trait_muzzle_size = ['TINYMUZZLE', 'SMALLMUZZLE', 'BIGMUZZLE', 'LARGEMUZZLE']
+    physical_trait_cheek_length = ['VSHORTCHEEKFUR', 'SHORTCHEEKFUR', 'LONGCHEEKFUR', 'VLONGCHEEKFUR']
+    physical_trait_cheek_shape = ['ELEGANTCHEEKFUR', 'SPIKYCHEEKFUR', 'FINCHEEKFUR', 'POINTEDCHEEKFUR', 'FLUFFYCHEEKFUR', 'CURLEDCHEEKFUR', 'DOWNCHEEKFUR', 'UPCHEEKFUR', 'DROOPCHEEKFUR']
+    physical_trait_nose_size = ['TINYNOSE', 'SMALLNOSE', 'LARGENOSE']
+    physical_trait_nose_shape = ['BUTTONNOSE', 'POINTEDNOSE', 'SQUARENOSE', 'FLATNOSE', 'SHARPNOSE', 'LONGNOSE', 'ROUNDEDNOSE', 'OVALNOSE', 'HEARTNOSE']
+    physical_trait_claw_length = ['USHORTCLAWS', 'SSHORTCLAWS', 'SLONGCLAWS', 'ULONGCLAWS']
+    physical_trait_whisker_length = ['USHORTWHISKERS', 'SSHORTWHISKERS', 'SLONGWHISKERS', 'ULONGWHISKERS']
+    physical_trait_whisker_shape = ['JAGGEDWHISKERS', 'CROOKEDWHISKERS', 'CURLEDWHISKERS', 'BRISTLYWHISKERS', 'UPWHISKERS', 'DROOPWHISKERS']
+    physical_trait_eyebrow_shape = ['THINEYEBROWS', 'CIRCLEEYEBROWS', 'LONGEYEBROWS', 'SQUAREEYEBROWS', 'RECTANGLEEYEBROWS', 'TRIANGLEEYEBROWS']
+    physical_trait_eyebrow_size = ['TINYEYEBROWS', 'SMALLEYEBROWS', 'BIGEYEBROWS', 'LARGEEYEBROWS']
+    physical_trait_fang_shape = ['HOOKEDTOOTH', 'PLOWERFANGS', 'PUPPERFANGS', 'PROTRUDEDFANG']
+    physical_trait_fang_density = ['NEEDLEFANGS', 'THINFANGS', 'JAGGEDFANGS', 'SHARPFANGS', 'LARGEFANGS', 'MASSIVEFANGS']
+    physical_trait_fang_length = ['VSHORTFANGS', 'SHORTFANGS', 'SSHORTFANGS', 'SLONGFANGS', 'LONGFANGS', 'VLONGFANGS']
+    physical_trait_neck_length = ['SHORTNECK', 'SSHORTNECK', 'SLONGNECK', 'LONGNECK']
+    physical_trait_neck_shape = ['THINNECK', 'SLIMNECK', 'MUSCULARNECK']
+    physical_trait_mane_shape = ['SILKYMANE', 'FLUFFYMANE', 'RUFFLEDMANE', 'SPIKYMANE', 'CURLEDMANE', 'FLOWYMANE', 'LIONMANE']
+    physical_trait_mane_length = ['VSHORTMANE', 'SHORTMANE', 'LONGMANE', 'VLONGMANE']
+    physical_trait_leg_shape = ['LONGLEGGED', 'SHORTLEGGED', 'SLIMLEGGED', 'MUSCULARLEGGED', 'STOCKYLEGGED']
+    physical_trait_paw_shape = ['SYNDACTYLYPAWS', 'WEBBEDPAWS', 'POLYDACTYLPAWS']
+    physical_trait_paw_size = ['VSMALLPAWS', 'SMALLPAWS', 'SSMALLPAWS', 'SLARGEPAWS', 'LARGEPAWS', 'VLARGEPAWS']
+    physical_trait_pawpad_texture = ['SOFTPAWPADS', 'ROUGHPAWPADS']
+    physical_trait_pawpad_shape = ['HEARTPAWPAD', 'ROUNDPAWPAD', 'FLATPAWPAD', 'TRIANGLEPAWPAD']
+    physical_trait_tail_shape = ['KINKEDTAIL', 'EXTRATAIL', 'PREHENSILETAIL', 'SPINYTAIL', 'FLATTAIL', 'SPIKYTAIL', 'PADDLETAIL', 'BUSHYTAIL', 'FEATHERYTAIL', 'CURLEDTAIL', 'FISHTAIL', 'CROOKEDTAIL', 'PLUMEDTAIL', 'LIONTAIL', 'FLOWYTAIL', 'DROOPEDTAIL', 'TUFTEDTAIL', 'FORKEDTAIL', 'MANXTAIL', 'BOBBEDTAIL']
+    physical_trait_tail_length = ['USHORTTAIL', 'SSHORTTAIL', 'HALFTAILED', 'ULONGTAIL', 'SLONGTAIL', 'VLONGTAIL']
+    physical_trait_tufted_body = ['RIDGEBACKSIDE', 'TUFTEDSHOULDERS', 'TUFTEDLEGS', 'TUFTEDPAWS', 'STUBBEDTUFTEDCHIN', 'TUFTEDCHIN', 'LONGCHINTUFT']
+
     """Holds all appearance information for a cat. """
 
     def __init__(
@@ -256,6 +295,14 @@ class Pelt:
         texture:str= "fluffy",
         size:str= "short",
         build:str= "strong",
+        physical_trait_1:str=None,
+        physical_trait_2:str=None,
+        physical_trait_3:str=None,
+        physical_trait_4:str=None,
+        physical_trait_hidden:str=None,
+        physical_trait_hidden_2:str=None,
+        physical_trait_hidden_3:str=None,
+        physical_trait_hidden_4:str=None,
         colour: str = "WHITE",
         white_patches: str = None,
         eye_color: str = "BLUE",
@@ -279,7 +326,7 @@ class Pelt:
         adult_sprite: str = None,
         senior_sprite: str = None,
         para_adult_sprite: str = None,
-        reverse: bool = False,
+        reverse: bool = False,        
     ) -> None:
         self.name = name
         self.colour = colour
@@ -295,6 +342,14 @@ class Pelt:
         self.texture = texture
         self.size = size
         self.build = build
+        self.physical_trait_1 = physical_trait_1
+        self.physical_trait_2 = physical_trait_2
+        self.physical_trait_3 = physical_trait_3
+        self.physical_trait_4 = physical_trait_4
+        self.physical_trait_hidden = physical_trait_hidden
+        self.physical_trait_hidden_2 = physical_trait_hidden_2
+        self.physical_trait_hidden_3 = physical_trait_hidden_3
+        self.physical_trait_hidden_4 = physical_trait_hidden_4
         self.points = points
         self.rebuild_sprite = True
         self._accessory = accessory
@@ -457,7 +512,7 @@ class Pelt:
         self.reverse = reverse
         self.skin = skin
         self.texture = texture if texture is not None else choice(["bristly", "brittle", "bushy", "coarse", "cottony", "delicate", "dense", "feathery", "fleecy", "fluffy", "fuzzy", "glossy", "greasy", "oily", "prickly", "puffy", "rough", "scratchy", "sharp", "silky", "sleek", "slick", "smooth", "soft", "spiky", "stringy", "wiry", "angular", "blunt", "bouncy", "braided", "choppy", "crimped", "crinkly", "curled", "curly", "drooping", "fine", "flattened", "flowing", "frayed", "frizzy", "jagged", "kinked", "knotted", "layered", "luscious", "luxurious", "matted", "messy", "nappy", "overgrown", "patchy", "plush", "pointy", "ruffled", "rugged", "scraggly", "shaggy", "shiny", "sparse", "springy", "straggly", "straight", "tangled", "thick", "thin", "twisted", "unkempt", "wavy", "wild", "wispy"])
-        self.build = build if build is not None else choice(["agile", "athletic", "limber", "nimble", "powerful", "trim", "angular", "elegant", "fit", "graceful", "majestic", "mighty", "neat", "rectangular", "rugged", "scraggy", "square", "strong", "stunning", "swift", "tough", "triangular", "vigorous", "brawny", "broadshouldered", "buff", "burly", "formidable", "hardy", "imposing", "muscular", "ripped", "stout", "sturdy", "thickset", "bulky", "chubby", "chunky", "dense", "heavy", "hefty", "huge", "hunky", "plump", "pudgy", "round", "dainty", "delicate", "lean", "light", "lithe", "sleek", "slender", "lanky", "narrow", "slight", "slim", "slinky", "spidery", "spindly", "thin", "bony", "brittle", "feeble", "flimsy", "fragile", "frail", "gaunt", "haggard", "puny", "scrawny", "skeletal", "skinny", "willowy", "wiry", "wispy", "wobbly"])
+        self.build = build if build is not None else choice(["agile", "athletic", "limber", "nimble", "powerful", "trim", "angular", "elegant", "fit", "graceful", "majestic", "mighty", "neat", "rectangular", "rugged", "scraggy", "square", "strong", "stunning", "swift", "tough", "triangular", "vigorous", "brawny", "broadshouldered", "buff", "burly", "formidable", "hardy", "imposing", "muscular", "ripped", "stout", "sturdy", "thickset", "bulky", "chubby", "chunky", "dense", "heavy", "hefty", "striking", "hunky", "plump", "pudgy", "round", "dainty", "delicate", "lean", "light", "lithe", "sleek", "slender", "lanky", "narrow", "slight", "slim", "slinky", "spidery", "spindly", "thin", "bony", "brittle", "feeble", "flimsy", "fragile", "frail", "gaunt", "haggard", "puny", "scrawny", "skeletal", "skinny", "willowy", "wiry", "wispy", "wobbly"])
         self.size = size if size is not None else choice(["tiny", "petite", "little", "small", "short", "squat", "stout", "stocky", "big", "large", "tall", "verylarge", "huge", "massive", "gigantic", "towering"])
 
     @property
@@ -499,6 +554,8 @@ class Pelt:
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
         new_pelt.init_tint()
+
+        new_pelt.init_physical_traits(parents)
 
         return new_pelt
 
@@ -698,6 +755,14 @@ class Pelt:
             self.texture = selected.texture
             self.size = selected.size
             self.build = selected.build
+            self.physical_trait_1 = selected.physical_trait_1
+            self.physical_trait_2 = selected.physical_trait_2
+            self.physical_trait_3 = selected.physical_trait_3
+            self.physical_trait_4 = selected.physical_trait_4
+            self.physical_trait_hidden = selected.physical_trait_hidden
+            self.physical_trait_hidden_2 = selected.physical_trait_hidden_2
+            self.physical_trait_hidden_3 = selected.physical_trait_hidden_3
+            self.physical_trait_hidden_4 = selected.physical_trait_hidden_4
             self.colour = selected.colour
             self.tortie_base = selected.tortie_base
             return selected.white
@@ -1126,7 +1191,7 @@ class Pelt:
                 add_weight = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10)
             elif p_ == "hefty":
                 add_weight = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10)
-            elif p_ == "huge":
+            elif p_ == "striking":
                 add_weight = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10)
             elif p_ == "hunky":
                 add_weight = (10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10)
@@ -1710,6 +1775,185 @@ class Pelt:
                 self.white_patches_tint = None
         else:
             self.white_patches_tint = None
+
+    def init_physical_traits(self, parents: tuple=()):
+
+        trait_categories = [
+            Pelt.physical_trait_head_shape,
+            Pelt.physical_trait_forelock_shape,
+            Pelt.physical_trait_eye_shape,
+            Pelt.physical_trait_eye_size,
+            Pelt.physical_trait_pupil_shape,
+            Pelt.physical_trait_ear_size,
+            Pelt.physical_trait_ear_shape,
+            Pelt.physical_trait_ear_length,
+            Pelt.physical_trait_ear_tufts,
+            Pelt.physical_trait_ear_furnishings,
+            Pelt.physical_trait_muzzle_length,
+            Pelt.physical_trait_muzzle_shape,
+            Pelt.physical_trait_muzzle_size,
+            Pelt.physical_trait_cheek_length,
+            Pelt.physical_trait_cheek_shape,
+            Pelt.physical_trait_nose_size,
+            Pelt.physical_trait_nose_shape,
+            Pelt.physical_trait_claw_length,
+            Pelt.physical_trait_whisker_length,
+            Pelt.physical_trait_whisker_shape,
+            Pelt.physical_trait_eyebrow_shape,
+            Pelt.physical_trait_eyebrow_size,
+            Pelt.physical_trait_fang_shape,
+            Pelt.physical_trait_fang_density,
+            Pelt.physical_trait_fang_length,
+            Pelt.physical_trait_neck_length,
+            Pelt.physical_trait_neck_shape,
+            Pelt.physical_trait_mane_shape,
+            Pelt.physical_trait_mane_length,
+            Pelt.physical_trait_leg_shape,
+            Pelt.physical_trait_paw_shape,
+            Pelt.physical_trait_paw_size,
+            Pelt.physical_trait_pawpad_texture,
+            Pelt.physical_trait_pawpad_shape,
+            Pelt.physical_trait_tail_shape,
+            Pelt.physical_trait_tail_length,
+            Pelt.physical_trait_tufted_body
+        ]
+
+        trait_pool = [(trait, category) for category in trait_categories for trait in category]
+
+        par_traits = set()
+        for p in parents:
+                par_traits.add(p.pelt.physical_trait_1)
+                par_traits.add(p.pelt.physical_trait_2)
+                par_traits.add(p.pelt.physical_trait_3)
+                par_traits.add(p.pelt.physical_trait_4)
+                par_traits.add(p.pelt.physical_trait_hidden)
+                par_traits.add(p.pelt.physical_trait_hidden_2)
+                par_traits.add(p.pelt.physical_trait_hidden_3)
+                par_traits.add(p.pelt.physical_trait_hidden_4)
+
+        # Remove any None values from par_traits
+        par_traits.discard(None)
+
+        if par_traits:
+            # Check for conflicting traits from the same category
+            for category in trait_categories:
+                clash_traits = par_traits.intersection(category)
+                if len(clash_traits) > 1:
+                    chosen_trait = random.choice(list(clash_traits))
+                    par_traits = par_traits.difference(clash_traits)
+                    par_traits.add(chosen_trait)
+            inherit_trait_chance = int(random.random() * 100)
+            if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                #Roll to inherit first trait, and if so, remove it from the list
+                self.physical_trait_1 = random.choice(list(par_traits))
+                par_traits.remove(self.physical_trait_1)
+                if len(par_traits) > 0:
+                    #If we have a first trait, roll to inherit a second, and if we do, remove it from the list
+                    inherit_trait_chance = int(random.random() * 100)
+                    if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                        self.physical_trait_2 = random.choice(list(par_traits))
+                        par_traits.remove(self.physical_trait_2)
+                        if len(par_traits) > 0:
+                            #If we have a second trait, roll to inherit a third, and if we do, remove it from the list
+                            inherit_trait_chance = int(random.random() * 100)
+                            if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                                self.physical_trait_3 = random.choice(list(par_traits))
+                                par_traits.remove(self.physical_trait_3)
+                                if len(par_traits) > 0:
+                                    #If we have a third trait, roll to inherit a fourth, and if we do, remove it from the list
+                                    inherit_trait_chance = int(random.random() * 100)
+                                    if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                                        self.physical_trait_4 = random.choice(list(par_traits))
+                                        par_traits.remove(self.physical_trait_4)
+            if len(par_traits) > 0:
+                #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                inherit_trait_chance = int((random.random() * 100) - 50)
+                if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                    self.physical_trait_hidden = random.choice(list(par_traits))
+                    par_traits.remove(self.physical_trait_hidden)
+                    if len(par_traits) > 0:
+                        #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                        inherit_trait_chance = int((random.random() * 100) - 50)
+                        if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                            self.physical_trait_hidden_2 = random.choice(list(par_traits))
+                            par_traits.remove(self.physical_trait_hidden_2)
+                            if len(par_traits) > 0:
+                                #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                                inherit_trait_chance = int((random.random() * 100) - 50)
+                                if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                                    self.physical_trait_hidden_3 = random.choice(list(par_traits))
+                                    par_traits.remove(self.physical_trait_hidden_3)
+                                    if len(par_traits) > 0:
+                                        #If there are still leftover traits, roll to inherit as hidden with a +50% chance
+                                        inherit_trait_chance = int((random.random() * 100) - 50)
+                                        if inherit_trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_inherit_chance"]:
+                                            self.physical_trait_hidden_4 = random.choice(list(par_traits))
+                                            par_traits.remove(self.physical_trait_hidden_4)
+
+        # Giving cats that inherited nothing a 50% of base chance roll for new traits
+        if not self.physical_trait_1:
+            trait_chance = int(random.random() * 100)
+            if trait_chance <= constants.CONFIG["cat_generation"]["physical_trait_chance"]:
+                if trait_chance <= (0.5 * constants.CONFIG["cat_generation"]["physical_trait_chance"]):
+                    traitcount = 2
+                    trait_chance = int(random.random() * 100)
+                    if trait_chance <= (0.25 * constants.CONFIG["cat_generation"]["physical_trait_chance"]):
+                        traitcount = 3
+                        trait_chance = int(random.random() * 100)
+                        if trait_chance <= (0.1 * constants.CONFIG["cat_generation"]["physical_trait_chance"]):
+                            traitcount = 4
+                else:
+                    traitcount = 1
+            else:
+                traitcount = 0
+
+            if traitcount > 0:
+                # Select the first trait and its category
+                trait1, category1 = random.choice(trait_pool)
+                print("Trait 1:", trait1)
+                self.physical_trait_1 = trait1
+
+                # Remove traits from the same category as the first trait
+                trait_pool = [(trait, category) for trait, category in trait_pool if category != category1]
+
+                if traitcount >= 2 and trait_pool:
+                    # Select the second trait from the remaining pool
+                    trait2, category2 = random.choice(trait_pool)
+                    print("Trait 2:", trait2)
+                    self.physical_trait_2 = trait2
+
+                    # Remove traits from the same category as the second trait
+                    trait_pool = [(trait, category) for trait, category in trait_pool if category != category2]
+
+                    if traitcount >= 3 and trait_pool:
+                        # Select the third trait from the remaining pool
+                        trait3, category3 = random.choice(trait_pool)
+                        print("Trait 3:", trait3)
+                        self.physical_trait_3 = trait3
+
+                        # Remove traits from the same category as the third trait
+                        trait_pool = [(trait, category) for trait, category in trait_pool if category != category3]
+
+                        if traitcount == 4 and trait_pool:
+                            # Select the fourth trait from the remaining pool
+                            trait4, category4 = random.choice(trait_pool)
+                            print("Trait 4:", trait4)
+                            self.physical_trait_4 = trait4
+                        else:
+                            self.physical_trait_4 = None
+                    else:
+                        self.physical_trait_3 = None
+                        self.physical_trait_4 = None
+                else:
+                    self.physical_trait_2 = None
+                    self.physical_trait_3 = None
+                    self.physical_trait_4 = None
+            else:
+                self.physical_trait_1 = None
+                self.physical_trait_2 = None
+                self.physical_trait_3 = None
+                self.physical_trait_4 = None
+
 
     @property
     def white(self):

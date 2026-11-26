@@ -104,7 +104,7 @@ dev_tools = false
   allow_mating = true
 
   # maximum age difference allowed for cats to be romantic with each other
-  age_range = 40
+  age_range = 20
 
   # if true, disables the same-age group check
   override_same_age_group = false
@@ -457,6 +457,10 @@ dev_tools = false
 
   # 1/2^(chance) that a cat will have colourpoint
   random_point_chance = 5
+
+  # physical traits mod config
+  physical_trait_chance = 20
+  physical_trait_inherit_chance = 50
 
 [cat_name_controls]
   # set to true if you always want cats named after the color of their pelt
@@ -1209,10 +1213,10 @@ dev_tools = false
 
 [prey]
   # if false, a cat's nutritional status will have no effect
-  activate_death = true
+  activate_death = false
 
   # if false, freshkill pile events will not be triggered
-  activate_events = true
+  activate_events = false
   # determines when the freshkill pile amount is considered "full" or "excessive" for the purpose of events
   # the higher this number, the more freshkill is required before the pile is "full/excessive"
   base_event_trigger_factor = 4

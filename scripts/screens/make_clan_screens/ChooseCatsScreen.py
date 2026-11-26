@@ -971,4 +971,26 @@ class ChooseCatsScreen(MakeClanScreenBase):
             if self.clan_info.leader != cat
             else cat.name.get_specsuffix_name(CatRank.LEADER)
         )
+
         return f"<b>{name}</b><br>{cat.genderalign_string}<br>{i18n.t('general.' + cat.age, count=1)}<br>{i18n.t('cat.personality.' + cat.personality.trait)}<br>{cat.skills.skill_string(short=True)}"
+
+        # Build trait string
+        traits = []
+        if cat.pelt.physical_trait_1:
+            traits.append(trait_descriptions.get(cat.pelt.physical_trait_1, cat.pelt.physical_trait_1))
+        if cat.pelt.physical_trait_2:
+            traits.append(trait_descriptions.get(cat.pelt.physical_trait_2, cat.pelt.physical_trait_2))
+        if cat.pelt.physical_trait_3:
+            traits.append(trait_descriptions.get(cat.pelt.physical_trait_3, cat.pelt.physical_trait_3))
+        if cat.pelt.physical_trait_4:
+            traits.append(trait_descriptions.get(cat.pelt.physical_trait_4, cat.pelt.physical_trait_4))
+
+        trait_string = ", ".join(traits) if traits else ""
+
+        base_info = f"<b>{cat.name}</b><br>{cat.genderalign}<br>{cat.age}<br>{cat.personality.trait}"
+
+        if trait_string:
+            return f"{base_info}<br>{trait_string}"
+        else:
+            return base_info
+
